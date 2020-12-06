@@ -1,6 +1,5 @@
 ﻿module Runner
 
-// runner for code in this project
 let printUsage () =
     printfn """
     AdventOfCode <cmd> <param> <file>. Examples:
@@ -9,6 +8,7 @@ let printUsage () =
         AdventOfCode day1triple 2020 path/to/data -- product of three numbers that sum to 2020
     """
 
+// runner for code in this project
 [<EntryPoint>]
 let main argv =
     if argv.Length.Equals 0
