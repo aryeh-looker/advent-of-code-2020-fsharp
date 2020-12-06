@@ -9,7 +9,7 @@ let findTriple desiredSum numbers =
        numbers |> Seq.skip 1 |> Seq.tryPick (fun b ->
             let searchFor = desiredSum - (a + b)
             if numberSet.Contains(searchFor)
-            then Some (a, b, desiredSum - (a + b))
+            then Some (a, b, searchFor)
             else None
         )
     )
