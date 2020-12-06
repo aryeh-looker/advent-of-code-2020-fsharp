@@ -2,6 +2,7 @@
 open System.IO
 open Common
 
+// find triple of numbers that sum to `desiredSum`
 let findTriple desiredSum numbers =
     let numberSet = Set.ofSeq(numbers);
     numbers |> Seq.tryPick (fun a ->
@@ -13,6 +14,7 @@ let findTriple desiredSum numbers =
         )
     )
 
+// product of triple of numbers that sum to `desiredSum`
 let run desiredSum numbers =
     match (findTriple desiredSum numbers) with
         | None -> None
