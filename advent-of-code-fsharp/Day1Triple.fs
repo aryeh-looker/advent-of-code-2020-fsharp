@@ -4,13 +4,13 @@ open Common
 
 // find triple of numbers that sum to `desiredSum`
 let findTriple desiredSum numbers =
-    let numberSet = Set.ofSeq(numbers);
-    numbers |> Seq.tryPick (fun a ->
-       numbers |> Seq.skip 1 |> Seq.tryPick (fun b ->
-            let searchFor = desiredSum - (a + b)
-            if numberSet.Contains(searchFor)
-            then Some (a, b, searchFor)
-            else None
+    let numberSet = Set.ofSeq(numbers) in
+        numbers |> Seq.tryPick (fun a ->
+           numbers |> Seq.skip 1 |> Seq.tryPick (fun b ->
+                let searchFor = desiredSum - (a + b) in
+                    if numberSet.Contains(searchFor)
+                    then Some (a, b, searchFor)
+                    else None
         )
     )
 
