@@ -43,8 +43,8 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Compile Include="Common.fs" />
-    <Compile Include="Day1.fs" />
-    <Compile Include="Day2.fs" />
+    <Compile Include="Day1Pair.fs" />
+    <Compile Include="Day1Triple.fs" />
     <Compile Include="Runner.fs" />
   </ItemGroup>
   <Import Project="$(FSharpTargetsPath)" />

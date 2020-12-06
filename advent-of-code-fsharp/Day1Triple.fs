@@ -1,4 +1,4 @@
-﻿module Day2
+﻿module Day1Triple
 open System.IO
 open Common
 
