@@ -1,5 +1,6 @@
 ﻿module Runner
 
+// runner for code in this project
 let printUsage () =
     printfn """
     AdventOfCode <cmd> <param> <file>. Examples:
